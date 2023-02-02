@@ -17,3 +17,35 @@ Content-Type: application/json
   "email": "test@test.com",
   "password": "password"
 }
+
+############ Medications ############
+### Medication Index
+GET http://localhost:3000/medications.json
+
+### Medication Show
+GET http://localhost:3000/medications/1.json
+
+### Medication Create
+POST http://localhost:3000/medications.json
+Content-Type: application/json
+
+{
+  "name": "metformin",
+  "amount": 1,
+  "measurement": "tablet",
+  "frequency": 3
+}
+
+### Medication Update
+PATCH http://localhost:3000/medications/1.json
+Content-Type: application/json
+
+{
+  "name": "insulin",
+  "amount": 33,
+  "measurement": "syringe",
+  "frequency": 2
+}
+
+### Medication Destroy
+DELETE http://localhost:3000/medications/4.json

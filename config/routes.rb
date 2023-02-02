@@ -7,4 +7,8 @@ Rails.application.routes.draw do
 
   ### Medications Routes
   get "/medications" => "medications#index"
+  get "/medications/:id" => "medications#show"
+  post "/medications" => "medications#create"
+  patch "/medications/:id" => "medications#update"
+  delete "/medications/:id" => "medications#destroy"
 end
