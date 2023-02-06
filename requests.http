@@ -37,14 +37,12 @@ Content-Type: application/json
 }
 
 ### Medication Update
-PATCH http://localhost:3000/medications/1.json
+PATCH http://localhost:3000/medications/2.json
 Content-Type: application/json
 
 {
-  "name": "insulin",
-  "amount": 33,
-  "measurement": "syringe",
-  "frequency": 2
+  "name": "Prinvil",
+  "directions": "Take 1 tablet (10mg) by mouth daily."
 }
 
 ### Medication Destroy

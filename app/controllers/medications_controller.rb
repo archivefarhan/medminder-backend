@@ -30,6 +30,7 @@ class MedicationsController < ApplicationController
     medication.amount = params["amount"] || medication.amount
     medication.measurement = params["measurement"] || medication.measurement
     medication.frequency = params["frequency"] || medication.frequency
+    medication.directions = params["directions"] || medication.directions
 
     medication.save
 
