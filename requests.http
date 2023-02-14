@@ -1,3 +1,4 @@
+############ User Sessions ############
 ### Users create (signup)
 POST http://localhost:3000/users.json
 Content-Type: application/json
@@ -47,3 +48,7 @@ Content-Type: application/json
 
 ### Medication Destroy
 DELETE http://localhost:3000/medications/4.json
+
+
+############ Reminders ############
+
